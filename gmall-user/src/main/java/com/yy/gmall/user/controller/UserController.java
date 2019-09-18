@@ -1,12 +1,10 @@
 package com.yy.gmall.user.controller;
 
-import com.yy.gmall.user.bean.UmsMemberReceiveAddress;
-import com.yy.gmall.user.bean.UserMember;
-
-import com.yy.gmall.user.service.UserService;
+import com.yy.gmall.bean.UmsMember;
+import com.yy.gmall.bean.UmsMemberReceiveAddress;
+import com.yy.gmall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -18,11 +16,14 @@ public class UserController {
     @Autowired
     UserService userService;
 
+
+
+
     @RequestMapping("getAllUser")
     @ResponseBody
-    public List<UserMember> getAllUser(){
-        List<UserMember> userMembers = userService.getAllUser();
-        return userMembers;
+    public List<UmsMember> getAllUser(){
+        List<UmsMember> umsMembers = userService.getAllUser();
+        return umsMembers;
     }
 
 

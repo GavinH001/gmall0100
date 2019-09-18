@@ -1,6 +1,6 @@
 package com.yy.gmall.user.mapper;
 
-import com.yy.gmall.user.bean.UmsMemberReceiveAddress;
+import com.yy.gmall.bean.UmsMemberReceiveAddress;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
